@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="{{keywords}}">
+    <meta name="description" content="{{description}}">
+    <title>独立游戏H5</title>
+    <script type="text/javascript">
+        var win_width = window.innerWidth || document.documentElement.clientWidth;
+        var win_height = window.innerHeight || document.documentElement.clientHeight;
+        var radio = win_height / win_width;
+        //1.425
+        radio = radio < 1.48 ? 1.622 : radio > 1.625 ? 1.622 : radio;
+        var maxwidth = win_height / radio;
+        if (win_height / win_width <= radio) {
+            win_width = maxwidth;
+        }
+        document.documentElement.style.fontSize = (win_width / 750 > 1 ? 1 : win_width / 750) * 100 + 'px';
+    </script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/index.css?v=3"/>
+    <link rel="stylesheet" href="css/extendAnimation-attr.css">
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+    <style>
+        .loading-bars{position:absolute;top: 10rem;width: 100%;}
+        .load-text{color:#fff;font-size:.36rem}
+        .load-text{box-sizing:border-box;text-align: center;}
+        .animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
+        .animated.hinge{-webkit-animation-duration:2s;animation-duration:2s}
+    </style>
+</head>
+<body>
+<!--主要页面-->
+
+<div class="main swiper-container">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide page2">
+
+            <img src="images/p2-text1.png" alt="比如，" class="text1 ani" animate-effect="fadeInRight" animation-duration=".35s" animate-delay=".2s">
+            <img src="images/p2-text2.png" alt="说剑" class="text2 ani" animate-effect="fadeInDown" animation-duration=".35s" animate-delay=".2s">
+            <img src="images/p2-text3.png" alt="写和意展现了武学的奥妙" class="text3 ani last-ani" animate-effect="fadeInLeft" animation-duration=".35s" animate-delay=".2s">
+
+            <img src="images/p2-fog2.png" class="fog ani" alt="雾" animate-effect="fogMove1">
+            <a class="arrow-down"><img class="arrow-ani2" src="images/arrow-down.png"></a>
+        </div>
+
+        <div class="swiper-slide page3">
+
+            <img src="images/p3-text1.png" alt="" class="text1 ani" animate-effect="fadeInLeft" animation-duration=".35s" animate-delay=".2s">
+            <img src="images/p3-text2.png" alt="" class="text2 ani" animate-effect="rotateIn" animation-duration=".35s" animate-delay=".2s">
+            <img src="images/p3-text3.png" alt="" class="text3 ani last-ani" animate-effect="fadeInRight" animation-duration=".25s" animate-delay=".2s">
+
+
+            <img class="water ani" src="images/water.png" alt="水滴" animate-effect="waterMove" animation-duration="3.5s" animate-delay="1s"/>
+            <img class="water ani" src="images/water.png" alt="水滴" animate-effect="waterMove" animation-duration="3.5s" animate-delay="1.2s"/>
+            <img class="water ani" src="images/water.png" alt="水滴" animate-effect="waterMove" animation-duration="3.5s" animate-delay="2.5s"/>
+            <img class="water ani" src="images/water.png" alt="水滴" animate-effect="waterMove" animation-duration="3.5s" animate-delay="4.1s"/>
+            <!--灯-->
+            <img src="images/light.png" alt="灯" class="light ani" animate-effect="light1-ani">
+            <!--雨-->
+            <img class="rains rains1 ani" src="images/rain1.png" animate-effect="rainsInOut" animation-duration="2.9s" animate-delay="0s"/>
+            <img class="rains rains2 ani" src="images/rain2.png" animate-effect="rainsInOut" animation-duration="3.4s" animate-delay="2.4s"/>
+            <img class="rains rains3 ani" src="images/rain2.png" animate-effect="rainsInOut" animation-duration="2.35s" animate-delay="0s"/>
+            <img class="rains rains4 ani" src="images/rain2.png" animate-effect="rainsInOut" animation-duration="3.35s" animate-delay="1.4s"/>
+            <img class="rains rains5 ani" src="images/rain5.png" animate-effect="rainsInOut" animation-duration="3.8s" animate-delay=".4s"/>
+
+            <img class="rains rains6 ani" src="images/rain1.png" animate-effect="rainsInOut" animation-duration="3s" animate-delay=".6s"/>
+            <img class="rains rains7 ani" src="images/rain2.png" animate-effect="rainsInOut" animation-duration="3.35s" animate-delay=".8s"/>
+            <img class="rains rains8 ani" src="images/rain3.png" animate-effect="rainsInOut" animation-duration="2.35s" animate-delay="0s"/>
+            <img class="rains rains9 ani" src="images/rain4.png" animate-effect="rainsInOut" animation-duration="3.65s" animate-delay="0s"/>
+            <img class="rains rains10 ani" src="images/rain5.png" animate-effect="rainsInOut" animation-duration="3.35s" animate-delay="2.4s"/>
+
+            <a class="arrow-down"><img class="arrow-ani2" src="images/arrow-down.png"></a>
+        </div>
+
+        <div class="swiper-slide page4">
+            <img src="images/p4-text1.png" alt="" class="text1 ani" animate-effect="fadeInDown" animation-duration=".25s" animate-delay=".2s">
+            <img src="images/p4-text2.png" alt="" class="text2 ani" animate-effect="zoomIn" animation-duration=".35s" animate-delay=".2s">
+            <img src="images/p4-text3.png" alt="" class="text3 ani last-ani" animate-effect="fadeInUp" animation-duration=".35s" animate-delay=".2s">
+
+            <img src="images/p4-fog2.png" alt="雾" class="fog ani" animate-effect="fogMove2">
+            <a class="arrow-down"><img class="arrow-ani2" src="images/arrow-down.png"></a>
+        </div>
+
+    </div>
+</div><!--main/-->
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/anime.min.js"></script>
+<script type="text/javascript">
+    var loadOptions = {
+        container: ".main",
+        slow: true,//开启缓慢显示进度，默认 false
+        slowtime: 50,//缓慢显示进度的时间间隔，默认 50
+        setRem: true,//使用rem单位
+        setWidth: true,//设置最大宽度
+        maxWidth: 750,//最大宽度
+        maxRadio: 1.622,//最大页面比例
+        minRadio: 1.48,//最小页面比例
+        radio: 1.622,//页面比例：1300:800
+        resize: true,//自适应
+        fullpage: false,//是否适应fullpage插件
+        autoHeight: false //尽量适应全屏
+    };
+    $(function(){
+        var $p_num = $("#percent_num"),
+                $l_bars =  $('#loading_bars');
+        $("body").loading({
+            onload:function(pre){//加载中的回调，每加载完一张图片调用一次
+                $p_num.html(pre);
+            },
+            complete:function(pre){//加载完成的回调
+                $l_bars.fadeOut();
+               APP.step1();
+            }
+        });
+    });
+</script>
+<script type="text/javascript" src="js/jquery-loading.1.8.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/jquery.css3callbacks.1.0.1.js"></script>
+<script type="text/javascript" src="js/$.ani.min.js"></script>
+<!--<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>-->
+<script type="text/javascript" src="js/app.js?v=3"></script>
+<script type="text/javascript">
+    var temp_swiper = null;
+    var mySwiper = null;
+    var actionIndex = 0;
+    var $arrowDown = $('.arrow-down');
+     mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+            swiperAnimateCache(swiper); //隐藏动画元素
+            temp_swiper = swiper;
+            $arrowDown.css({'visibility':'hidden'})
+        },
+         onSlideChangeStart: function(swiper){
+             $arrowDown.css({'visibility':'hidden'});
+         },
+        onSlideChangeEnd: function(swiper){
+            //swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            actionIndex = swiper.activeIndex;
+            switch (swiper.activeIndex) {
+                case 0:
+                    APP.step2(swiper);
+                    break;
+                case 1:
+                    APP.step3(swiper);
+                    break;
+                case 2:
+                    APP.step4(swiper);
+                    break;
+                case 3:
+                    APP.step5(swiper);
+                    break;
+                default:
+                    break;
+            }
+
+        },
+         onTouchEnd: function(swiper, event){
+         }
+    });
+
+    //箭头点击事件
+    $arrowDown.on('click', function () {
+        toNextPage();
+    });
+
+    //跳到下一屏
+    function toNextPage(){
+        if(mySwiper.activeIndex !== 3){
+            mySwiper.slideTo(mySwiper.activeIndex+1, 1000, function (swiper) {
+                swiperAnimate(swiper);
+            });
+        }
+    }
+
+</script>
+</body>
+</html>

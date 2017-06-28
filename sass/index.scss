@@ -1,0 +1,112 @@
+﻿@charset "utf-8";
+@import "media-queries";
+@import "my_reset";
+
+body{
+  position: relative;
+  margin: 0 auto;
+  max-width: 7.5rem;
+  //background-color: #001E4C;
+}
+
+
+
+
+%pos_center{
+  left: 50%;
+  transform: translate(-50%,0);
+  //transform: translateX(-50%);
+}
+
+%xy{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+%mc{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: 100%;
+  overflow: visible;
+}
+
+
+.arrow-down{
+  position: absolute;
+  bottom: .92rem;
+  @extend %pos_center;
+  z-index: 1;
+  cursor: pointer;
+  width: .87rem;
+  visibility: hidden;
+}
+
+.write-text{
+  display: none;
+}
+
+.page{
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 7.5rem;
+  overflow: hidden;
+}
+
+.swiper-wrapper{
+  max-width: 7.5rem;
+  //overflow: hidden;
+}
+
+.swiper-slide{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@import "first-page";
+/*---第一屏---*/
+@import "page1";
+/*---第二屏---*/
+@import "page2";
+/*---第三屏---*/
+@import "page3";
+
+@import "page4";
+
+@import "page5";
+
+@import "page6";
+
+//@import "page7";
+
+@import "page7_2";
+
+
+/*---窗口---*/
+//@import "win";
+
+@import "ani";
+
+.music { display:none; width:0.65rem; height:0.65rem; background-image:url(../images/music-off.png); background-size:cover; position:fixed; z-index:9999; top:0.2rem; right:0.2rem; }
+.music.on { background-image:url(../images/music-on.png); -webkit-animation: rotate 2000ms linear infinite normal; animation: rotate 2000ms linear infinite normal; }
+@-webkit-keyframes rotate {
+  0%{ -webkit-transform:rotate(0); transform:rotate(0); }
+  100%{ -webkit-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@keyframes rotate {
+  0%{ transform:rotate(0); }
+  100%{ transform:rotate(360deg); }
+}
+
+//动画时间
+//@import "animation-duration";
+
+//动画延迟时间
+//@import "animate-delay";
+

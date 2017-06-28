@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+.page3 {
+  background: #071216 url(../images/page3-bg.jpg) no-repeat 50% 0;
+  background-size: 100% auto;
+  padding-top: .6rem;
+  .text1 {
+	margin-left: .56rem;
+	margin-bottom: .3rem;
+	width: 1.04rem;
+	height: .34rem;
+	transform: translate3d(0, 0, 0)
+  }
+  .text2 {
+	margin-left: .56rem;
+	margin-bottom: .34rem;
+	width: 2.77rem;
+	height: 1.34rem;
+	transform: translate3d(0, 0, 0)
+  }
+  .text3 {
+	margin-left: .56rem;
+	width: 4.65rem;
+	height: .34rem;
+	transform: translate3d(0, 0, 0)
+  }
+
+  .rain {
+	position: absolute;
+	top: 0;
+	left: 0;
+//	left: 0.65rem;
+//	width: 6.43rem;
+	width: 100%;
+	height: 8.68rem;
+	background-image: url(../images/rain.png);
+	background-position: 0% 0%;
+//	background: url(../images/rain.png)  0 0;
+	background-size: 200% 100%;
+  }
+
+  .rains{
+	position: absolute;
+	top: 0;
+	width: .1rem;
+	height: 8.5rem;
+	opacity: 0;
+	&.rains1{
+	  left: 4%;
+	}
+	&.rains2{
+	  left: 11%;
+	}
+	&.rains3{
+	  left: 25%;
+	}
+	&.rains4{
+	  left: 55%;
+	}
+	&.rains5{
+	  left: 20%;
+	}
+	&.rains6{
+	  left: 34%;
+	}
+	&.rains7{
+	  left: 45%;
+	}
+	&.rains8{
+	  left: 68%;
+	}
+	&.rains9{
+	  left: 76%;
+	}
+	&.rains10{
+	  left: 96%;
+	}
+
+
+
+  }
+
+  .light {
+	position: absolute;
+	top: 2.55rem;
+	right: 0;
+	width: 3.89rem;
+	height: 7.42rem;
+	opacity: 0;
+  }
+
+  .water{
+	position: absolute;
+	top: -.12rem;
+	left: 2.6rem;
+	width: .07rem;
+	height: .11rem;
+  }
+
+}

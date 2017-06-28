@@ -1,0 +1,66 @@
+﻿@charset "utf-8";
+
+.page2 {
+  background: #ccc url(../images/page2-bg.jpg) no-repeat 0 0;
+  background-size: 100% auto;
+
+  .text1, .text2, .text3 {
+	position: absolute;
+	top: .7rem;
+  }
+  .text1 {
+	left: 5rem;
+	width: .32rem;
+	height: .7rem;
+	transform: translate3d(0, 0, 0)
+  }
+  .text2 {
+	left: 3.24rem;
+	width: 1.36rem;
+	height: 2.72rem;
+	transform: translate3d(0, 0, 0);
+  }
+  .text3 {
+	left: 2.35rem;
+	width: .34rem;
+	height: 4.68rem;
+	transform: translate3d(0, 0, 0)
+  }
+
+  .fog {
+	position: absolute;
+	top: 0;
+	left: 0;
+//	opacity: .35;
+	width: 11.18rem;
+	height: 13.42rem;
+	max-width: none;
+//	width: 7.5rem;
+//	height: 12.06rem;
+  }
+  .fog2{
+	position: absolute;
+	top: 0;
+	left: 0;
+//	opacity: .35;
+	width: 11.18rem;
+	height: 13.42rem;
+//	height: 12.06rem;
+	max-width: none;
+	background: url(../images/p2-fog2.png) no-repeat 0 0;
+	background-size: contain;
+//	&:before{
+//	  content: '';
+//	  position: absolute;
+//	  top: 0;
+//	  left: 100%;
+//	  width: 11.18rem;
+//	  height: 13.42rem;
+////	  height: 12.06rem;
+//	  transform: skewX(180deg);
+//	  background: url(../images/p2-fog2.png) no-repeat 0 0;
+//	  background-size: contain;
+//	}
+  }
+
+}

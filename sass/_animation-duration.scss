@@ -1,0 +1,11 @@
+﻿@charset "utf-8";
+
+
+
+@for $index from 0 to 1000{
+
+  .a-duration-#{$index * 10}ms{
+	animation-duration: #{$index* 10}ms;
+  }
+
+}

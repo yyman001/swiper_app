@@ -1,0 +1,429 @@
+﻿@charset "utf-8";
+/*----动画-----*/
+//
+//.fadeIn {
+//  animation-name: fadeIn;
+//}
+//
+//@keyframes fadeIn {
+//  0% {
+//    opacity: 0;
+//  }
+//
+//  100% {
+//    opacity: 1;
+//  }
+//}
+.fadeIn2 {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: .75s;
+}
+
+.fadeOut2 {
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+  animation-duration: .35s;
+}
+
+.arrow-ani {
+  animation: down_move .8s linear 0s infinite normal;
+}
+
+//.libao-ani {
+//  //animation: libao-ani .7s ease-in-out infinite alternate;
+//  animation: libao-ani 1.4s steps(2) infinite;
+//}
+//
+//@keyframes libao-ani {
+//  0% {
+//    background-position: 0% 0%;
+//  }
+//  100% {
+//    background-position: 200% 0%;
+//  }
+//}
+
+.widthShow{
+  animation-name: widthShow;
+}
+
+@keyframes widthShow {
+  0%{
+	width: 0%;
+  }
+  100%{
+	width: 100%;
+  }
+}
+
+
+.light1-ani {
+  animation: light1-ani 4s ease-in-out infinite alternate !important;
+}
+
+@keyframes light1-ani {
+  0% {
+	opacity: .1;
+	//    opacity: 0;
+  }
+  50% {
+	opacity: .8;
+  }
+  100% {
+	//	opacity: 0;
+	opacity: .1;
+  }
+}
+
+.fogMove1 {
+  animation: fogMove 10s ease-in-out infinite normal !important;
+  //  animation: fogMove 5s ease-in-out infinite alternate !important;
+}
+
+.fogMove2 {
+  animation: fogMove2 5s ease-in-out infinite normal !important;
+  //  animation: fogMove 5s ease-in-out infinite alternate !important;
+}
+
+@keyframes fogMove {
+  0% {
+	opacity: 0;
+	transform: translate3d(0, 0, 0);
+  }
+  25% {
+	opacity: .5;
+  }
+  50% {
+	opacity: .35;
+  }
+  75% {
+	opacity: .5;
+  }
+  100% {
+	opacity: 0;
+	transform: translate3d(-30%, 0, 0);
+  }
+}
+
+@keyframes fogMove2 {
+  0% {
+	opacity: 0;
+	transform: translate3d(0, 0, 0);
+  }
+  25% {
+	opacity: .7;
+  }
+  50% {
+	opacity: 1;
+  }
+  75% {
+	opacity: .7;
+  }
+  100% {
+	opacity: 0;
+	transform: translate3d(-30%, 0, 0);
+  }
+}
+
+
+.btnRun {
+  animation: btnRun 5s ease infinite normal !important;
+  //  animation: fogMove 5s ease-in-out infinite alternate !important;
+}
+
+@keyframes btnRun {
+  0% {
+	width: 0;
+	height: 0;
+  }
+
+  100% {
+	width: 100%;
+  }
+}
+
+@keyframes down_move {
+  0% {
+	opacity: .2;
+	transform: translateY(-12px);
+  }
+
+  50% {
+	opacity: 1;
+	//transform: translateY(12%);
+  }
+  100% {
+	opacity: .2;
+	transform: translateY(12px);
+  }
+}
+
+.arrow-ani2 {
+  animation: arrowInDown 1.8s ease-out 0s infinite;
+}
+
+@keyframes arrowInDown {
+  0% {
+	opacity: 0;
+	transform: translate3d(0, -15px, 0);
+  }
+  40% {
+	opacity: 1;
+  }
+  100% {
+	transform: translate3d(0, 15px, 0);
+	opacity: 0;
+  }
+}
+
+.scale-ani {
+  animation-name: scaleBigMin;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+.scale1 {
+  animation: scaleBigMin 1.4s ease-in-out infinite alternate;
+}
+
+.scale2 {
+  animation: scaleBigMin 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes scaleBigMin {
+  0% {
+	//	visibility: visible;
+	//	opacity: 1;
+	transform: scale(1);
+  }
+  100% {
+	//	opacity: 1;
+	//	visibility: visible;
+	transform: scale(.62);
+  }
+}
+
+//雨
+.rain-ani {
+  //  animation: rain 1.4s ease-in-out infinite alternate;
+  animation: rain 5s steps(80) infinite;
+}
+
+@keyframes rain {
+  0% {
+	background-position: 0% 0%;
+  }
+  50% {
+	background-position: 200% 0%;
+  }
+  100% {
+	background-position: 0% 0%;
+  }
+}
+
+/*雨点动画*/
+.rainsInOut {
+  //  animation: rainsInOut 1.4s ease-in-out infinite alternate;
+  animation-name: rainsInOut;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes rainsInOut {
+  0% {
+	opacity: 0;
+  }
+  50% {
+	opacity: .65;
+  }
+  0% {
+	opacity: 0;
+  }
+}
+
+/*水滴*/
+.waterMove {
+//  animation: waterMove 3.5s ease-in infinite normal;
+//  animation: waterMove 3.5s ease-in infinite normal;
+  animation-name: waterMove;
+  animation-timing-function:ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-duration: 3.5s;
+}
+
+@keyframes waterMove {
+  0% {
+	transform: translate3d(0, 0, 0) rotate(0deg);//1
+  }
+  12.5% {
+//	transform: translate3d(0, 1.23rem, 0) rotate(0deg); //2
+	transform: translate3d(0, 1.35rem, 0) rotate(0deg); //2
+  }
+  12.6%{
+//	transform: translate3d(0, 1.23rem, 0) rotate(-90deg);
+	transform: translate3d(0, 1.35rem, 0) rotate(-90deg);
+  }
+  //16
+  //1
+  //old=> 25
+  25% {
+//	transform: translate3d(.62rem, 1.26rem, 0) rotate(-45deg); //3
+	transform: translate3d(.62rem, 1.38rem, 0) rotate(-45deg); //3
+  }
+  25.1%{
+//	transform: translate3d(.62rem, 1.26rem, 0) rotate(0deg);
+	transform: translate3d(.62rem, 1.38rem, 0) rotate(0deg);
+  }
+  //2
+  //35
+  37.5% {
+//	transform: translate3d(.62rem, 1.82rem, 0) rotate(0deg); //4
+	transform: translate3d(.62rem, 1.94rem, 0) rotate(0deg); //4
+  }
+  37.6%{
+//	transform: translate3d(.6rem, 1.82rem, 0) rotate(90deg);
+	transform: translate3d(.6rem, 1.94rem, 0) rotate(90deg);
+  }
+  //3
+  //45
+  50% {
+//	transform: translate3d(0, 1.82rem, 0) rotate(90deg); //5
+	transform: translate3d(0, 1.94rem, 0) rotate(90deg); //5
+  }
+  50.1% {
+//	transform: translate3d(0, 1.82rem, 0) rotate(0deg); //5
+	transform: translate3d(0, 1.94rem, 0) rotate(0deg); //5
+  }
+  //4
+  //55
+  62% {
+//	transform: translate3d(0,2.48rem, 0) rotate(0deg); //6
+	transform: translate3d(0,2.6rem, 0) rotate(0deg); //6
+  }
+  62.1% {
+//	transform: translate3d(0,2.46rem, 0) rotate(-90deg); //6
+	transform: translate3d(0,2.6rem, 0) rotate(-90deg); //6
+  }
+  //5
+  //65
+  75% {
+//	transform: translate3d(.7rem,2.48rem, 0) rotate(0deg); //7
+	transform: translate3d(.7rem,2.6rem, 0) rotate(0deg); //7
+  }
+
+  100% {
+//	transform: translate3d(.7rem,8.8rem, 0) rotate(0deg);//8
+	transform: translate3d(.7rem,8.56rem, 0) rotate(0deg);//8
+  }
+}
+
+
+//@keyframes waterMove {
+//  0% {
+//	transform: translate3d(0, 0, 0) rotate(0deg);//1
+//  }
+//  10% {
+//	transform: translate3d(0, 1.23rem, 0) rotate(0deg); //2
+//  }
+//  10.1%{
+//	transform: translate3d(0, 1.23rem, 0) rotate(-90deg);
+//  }
+//  //16
+//  //1
+//  //old=> 25
+//  26% {
+//	transform: translate3d(.62rem, 1.26rem, 0) rotate(-45deg); //3
+//  }
+//  26.1%{
+//	transform: translate3d(.62rem, 1.26rem, 0) rotate(0deg);
+//  }
+//  //2
+//  //35
+//  42% {
+//	transform: translate3d(.62rem, 1.82rem, 0) rotate(0deg); //4
+//  }
+//  42.1%{
+//	transform: translate3d(.6rem, 1.82rem, 0) rotate(90deg);
+//  }
+//  //3
+//  //45
+//  58% {
+//	transform: translate3d(0, 1.82rem, 0) rotate(90deg); //5
+//  }
+//  58.1% {
+//	transform: translate3d(0, 1.82rem, 0) rotate(0deg); //5
+//  }
+//  //4
+//  //55
+//  74% {
+//	transform: translate3d(0,2.48rem, 0) rotate(0deg); //6
+//  }
+//  74.1% {
+//	transform: translate3d(0,2.46rem, 0) rotate(-90deg); //6
+//  }
+//  //5
+//  //65
+//  90% {
+//	transform: translate3d(.7rem,2.48rem, 0) rotate(0deg); //7
+//  }
+//
+//  100% {
+//	transform: translate3d(.7rem,8.8rem, 0) rotate(0deg);//8
+//  }
+//}
+
+.slideDown2 {
+  animation-name: slideDown;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.slideDown {
+  animation-name: slideDown;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideDown {
+  0% {
+	transform: translate3d(0, 0, 0)
+  }
+  100% {
+	transform: translate3d(0, 13rem, 0)
+  }
+}
+
+/*抖抖抖动画*/
+.shake-chunk{
+  animation-name: shake-chunk;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-chunk { 2% { transform: translate(-2px, -3px) rotate(-3deg); }
+  4% { transform: translate(2px, 1px) rotate(3deg); }
+  6% { transform: translate(0px, -4px) rotate(3deg); }
+  8% { transform: translate(1px, 5px) rotate(1deg); }
+  10% { transform: translate(0px, 0px) rotate(5deg); }
+  12% { transform: translate(-2px, -1px) rotate(3deg); }
+  14% { transform: translate(-3px, 3px) rotate(5deg); }
+  16% { transform: translate(5px, 1px) rotate(0deg); }
+  18% { transform: translate(3px, 0px) rotate(-4deg); }
+  20% { transform: translate(-4px, 5px) rotate(-2deg); }
+  22% { transform: translate(4px, 2px) rotate(2deg); }
+  24% { transform: translate(1px, 1px) rotate(-4deg); }
+  26% { transform: translate(-4px, 5px) rotate(3deg); }
+  28% { transform: translate(2px, 3px) rotate(-4deg); }
+  30% { transform: translate(5px, 2px) rotate(5deg); }
+  32% { transform: translate(1px, 3px) rotate(-3deg); }
+  34% { transform: translate(-4px, -2px) rotate(3deg); }
+  36% { transform: translate(0px, 3px) rotate(1deg); }
+  38% { transform: translate(3px, 4px) rotate(3deg); }
+  50%{border: 1px solid #fff550;}
+  0%, 40%, 100% { transform: translate(0, 0) rotate(0); } }
+
+
